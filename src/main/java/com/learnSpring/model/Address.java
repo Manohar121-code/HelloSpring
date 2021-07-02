@@ -3,6 +3,16 @@ package com.learnSpring.model;
 public class Address {
 	private String state;
 	private String country;
+	
+	public Address() {
+		
+	}
+
+	public Address(String state, String country) {
+		super();
+		this.state = state;
+		this.country = country;
+	}
 
 	public String getState() {
 		return state;

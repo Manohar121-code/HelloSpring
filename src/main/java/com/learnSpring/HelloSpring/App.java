@@ -18,5 +18,12 @@ public class App
         System.out.println(emp.getId());
         System.out.println(emp.getName());
         System.out.println(emp.getAddress());
+        
+        System.out.println("--------------------");
+        
+        Employee emp2 = (Employee) applicationContext.getBean("employeeBeanConst");
+        System.out.println(emp2.getId());
+        System.out.println(emp2.getName());
+        System.out.println(emp2.getAddress());
     }
 }

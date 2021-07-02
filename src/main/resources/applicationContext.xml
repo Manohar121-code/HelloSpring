@@ -15,5 +15,16 @@
 		<property name="name" value="Mahesh"></property>
 		<property name="address" ref="addressBean"></property>
 	</bean>
+	
+	<bean id="addressBeanConst" class="com.learnSpring.model.Address">
+		<constructor-arg name="state" value="Andhra Pradesh" index="0"></constructor-arg>
+		<constructor-arg name="country" value="India" index="1"></constructor-arg>
+	</bean>
+	
+	<bean id="employeeBeanConst" class="com.learnSpring.model.Employee">
+		<constructor-arg name="id" value="2" index="0"></constructor-arg>
+		<constructor-arg name="name" value="Rajesh" index="1"></constructor-arg>
+		<constructor-arg name="address" ref="addressBeanConst" index="2"></constructor-arg>
+	</bean>
 
 </beans>
